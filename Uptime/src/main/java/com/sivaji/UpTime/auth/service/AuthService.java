@@ -82,9 +82,8 @@ public class AuthService {
         String newAccessToken = jwtService.generateAccessToken(userId);
 
         return new AuthResponseDto(newAccessToken, refreshToken.getToken());
-    }
-
-
+    }     
+       
     // LOGOUT
     public void logout(RefreshTokenDto request) {
 
